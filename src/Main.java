@@ -2,11 +2,18 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.println("Введите текст и нажмите <Enter>:");
-        String text=new Scanner(System.in).nextLine();
-        System.out.println("Длина текста"+text.length());
+        String plus="Сумма: ";
+        String min ="Разность: ";
+        String mult ="Произведение: ";
+        String div ="Частное: ";
+        System.out.println("Введите первое число");
+        int number1= new Scanner(System.in).nextInt();
+        System.out.println("Введите второе число");
+        int number2= new Scanner(System.in).nextInt();
+        System.out.println(plus+(number1+number2));
+        System.out.println(min+(number1-number2));
+        System.out.println(mult+(number1*number2));
+        System.out.println(div+((double)number1/number2));
 
         }
     }
