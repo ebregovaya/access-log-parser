@@ -2,7 +2,7 @@ import java.io.File;
 import java.util.Scanner;
 
 public class Main {public static void main(String[] args) {
-    //0
+    //C:\_git\AccessLogParser\src\Main.java
     int res=0;
          while (true) {
             System.out.println("Для выхода нажмите 0");
