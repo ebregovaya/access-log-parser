@@ -2,11 +2,15 @@ import java.io.File;
 import java.util.Scanner;
 
 public class Main {public static void main(String[] args) {
-    //C:\_git\AccessLogParser\src\Main.java
+    //0
     int res=0;
          while (true) {
+            System.out.println("Для выхода нажмите 0");
             System.out.println("Укажите путь к файлу :");
             String path = new Scanner(System.in).nextLine();
+            if (path.equals("0")) {
+                break;
+            }
             File file = new File(path);
             boolean fileExists = file.exists();
             boolean isDirectory = file.isDirectory();
